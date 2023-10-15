@@ -3,6 +3,7 @@ import { Layout, QueryResult } from '../components';
 import { gql } from '../__generated__';
 import { useQuery } from '@apollo/client';
 import TrackCard from '../containers/track-card';
+import { useNavigation } from 'react-router-dom';
 
 const TRACKS = gql(`
 query GetTracks {

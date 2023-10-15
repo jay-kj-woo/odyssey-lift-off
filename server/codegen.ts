@@ -9,6 +9,8 @@ const config: CodegenConfig = {
         contextType: './context#DataSourceContext',
         mappers: {
           Track: './models#TrackModel',
+          Module: './models#ModuleModel',
+          Author: './models#AuthorModel',
         },
       },
     },
