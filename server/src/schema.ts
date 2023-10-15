@@ -5,6 +5,7 @@ export const typeDefs = gql`
     "get tracks array for home"
     tracksForHome: [Track!]!
     track(id: ID!): Track!
+    module(id: ID!): Module!
   }
 
   "A Track is a group of modules that teaches about a specific topic"
@@ -25,6 +26,8 @@ export const typeDefs = gql`
     id: ID!
     title: String!
     length: Int
+    content: String
+    videoUrl: String
   }
 
   "Author of a complete Track or module"
